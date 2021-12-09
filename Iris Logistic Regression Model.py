@@ -16,7 +16,14 @@ data=load_iris()
 # ## Plotting Data 
 
 # To plot the data, I will need matplotlib, the iris dataset, mpl_toolkits, and the principal
-# component analysis tool. Matplotlib will allow me to plot the data using a scatter plot. Since I will need to create a 3D plot of the data as well, the mpl_toolkit function will allow me to acheieve this. Furthermore, the PCA tool will allow me to visualize the interrelations amoung the variables using the 3D plot. To start, I will need import the data from the iris dataset. After importing the data, I will need to select the features that will be plotted. I will be using "Sepal Length" and "Sepal Width" as my axes because these are used to determine the classification of each iris flower. The min and max equations will take all of the rows from each feature and adjust them by .5 to give a decision boundary and then plot them on the scatter plot. Moving onto to the 3D plot, setting the elev=-150 and azim=110 will adjust the view angle to get a better sense of the relationship between the three classifers. Color is added to both plots to represent each class of iris flower. Using the PCA function allows me to represent each of the 3 classes on the 3D plot and are labeled as eigenvectors because they are associated with the characteristics of each class of iris flower. 
+# component analysis tool. Matplotlib will allow me to plot the data using a scatter plot. Since I will need to create a 3D plot of the data as well, 
+the mpl_toolkit function will allow me to achieve this. Furthermore, the PCA tool will allow me to visualize the interrelations among the variables 
+using the 3D plot. To start, I will need import the data from the iris dataset. After importing the data, I will need to select the features that will 
+be plotted. I will be using "Sepal Length" and "Sepal Width" as my axes because these are used to determine the classification of each iris flower. The 
+min and max equations will take all of the rows from each feature and adjust them by .5 to give a decision boundary and then plot them on the scatter plot. 
+Moving onto to the 3D plot, setting the elev=-150 and azim=110 will adjust the view angle to get a better sense of the relationship between the three classifiers. 
+Color is added to both plots to represent each class of iris flower. Using the PCA function allows me to represent each of the 3 classes on the 3D plot and are 
+labeled as eigenvectors because they are associated with the characteristics of each class of iris flower. 
 
 # In[2]:
 
@@ -69,7 +76,10 @@ plt.show()
 
 # ## Splitting Data 
 
-# To split the data, I will need to import numpy and train_test_split. Using numpy will allow me to create an array that will be used to establish my training and testing datasets. The train_test_split function will help me carryout splitting the data. After creating the array that has a range of 10, shaped into 5 pairs of 2, I chose to have the data split into 2/3 train and 1/3 test because this should lead to a high level of accuracy once the model is run. If I increase the testing data, this will lower my accuracy, and if I decrease the testing data this might lead to overfitting as the model will be highly accurate on training data and won't be accurate when it comes to new data. Therefore, 1/3 testing data is ideal. 
+# To split the data, I will need to import numpy and train_test_split. Using numpy will allow me to create an array that will be used to establish my training and testing datasets. 
+The train_test_split function will help me carryout splitting the data. After creating the array that has a range of 10, shaped into 5 pairs of 2, I chose to have the data split into 
+2/3 train and 1/3 test because this should lead to a high level of accuracy once the model is run. If I increase the testing data, this will lower my accuracy, and if I decrease the 
+testing data this might lead to overfitting as the model will be highly accurate on training data and won't be accurate when it comes to new data. Therefore, 1/3 testing data is ideal. 
 
 # In[2]:
 
@@ -107,7 +117,11 @@ train_test_split(y, shuffle=False)
 
 # ## Visualization of Data
 
-# The visualize the model using a scatter plot, matplotlib will be used again, along with numpy. I will need some sklearn tools such as accuracy_score, logisticregression, support vector classification, gaussianprocessclassifier, and radial basis function. After importing the data similar to when I originally plotted the data, I will need to use an RBF to work along the GPC. The center will defined as 10 to coincide with the range that I set earlier, and the kernel function will be used to help with the pattern analysis and GPC. After the kernel has been set, it be used to predict the classfiers, regression, and GPC outcomes and help determine their accuracy. Using the proba function, the propabilties of each X varible will be calculated and used in a probability chart that will compare their probabilitues at each class level. 
+# To visualize the model using a scatter plot, matplotlib will be used again, along with numpy. I will need some sklearn tools such as accuracy_score, logistic regression, 
+support vector classification, gaussianprocessclassifier, and radial basis function. After importing the data similar to when I originally plotted the data, I will need to 
+use an RBF to work along the GPC. The center will defined as 10 to coincide with the range that I set earlier, and the kernel function will be used to help with the pattern 
+analysis and GPC. After the kernel has been set, it be used to predict the classifiers, regression, and GPC outcomes and help determine their accuracy. Using the proba function, 
+the probabilities of each X variable will be calculated and used in a probability chart that will compare their probabilities at each class level. 
 
 # In[18]:
 
