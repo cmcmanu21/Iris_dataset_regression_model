@@ -4,7 +4,7 @@
 ----
 ### The Task: 
 
-Use the Iris dataset from scikit-learn to train a logostic regression model to properly predict the class of an Iris flower. Once the
+Use the Iris dataset from scikit-learn to train a logistic regression model to properly predict the class of an Iris flower. Once the
 model has been properly trained, use matplotlib to show the data in a scatter plot. 
 
 ### Where to find the dataset:
